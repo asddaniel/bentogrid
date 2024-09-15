@@ -7,9 +7,9 @@ function App() {
 
   return (
     <>
-     <div className="grid grid-cols-1 lg:grid-cols-7 p-3 gap-4">
-      <div className="p-2 lg:col-span-2 flex flex-col lg:items-end lg:justify-start justify-center gap-2 w-full">
-        <div className="p-3 font-semibold  rounded-lg shadow-sm cursor-pointer bg-pink-100 text-2xl h-64 lg:w-40 w-full">
+     <div className="grid grid-cols-1 lg:grid-cols-7 lg:row-span-6 p-3 gap-4">
+      <div className="p-2 lg:col-span-2 lg:row-span-2 flex flex-col lg:items-end lg:justify-start justify-center gap-2 w-full">
+        <div className="p-3 font-semibold  rounded-lg shadow-sm cursor-pointer bg-pink-100 text-2xl h-72 lg:w-40 w-full">
         <span className="">
           Create and schedule content
         </span>
@@ -29,8 +29,8 @@ function App() {
         </div>
         </div>
       </div>
-     <div className='grid lg:grid-cols-2 gap-4 lg:col-span-3'>
-     <div style={{backgroundColor: 'hsl(228, 45%, 44%)'}} className="p-2 lg:col-span-2 shadow lg:text-5xl text-2xl font-semibold rounded-lg h-56 text-white text-center ">
+     <div className='grid lg:grid-cols-2 gap-2 lg:col-span-3'>
+     <div style={{backgroundColor: 'hsl(228, 45%, 44%)'}} className="p-2 py-1 lg:col-span-2 shadow lg:text-5xl text-2xl font-semibold rounded-lg h-56 text-white text-center ">
         <span>Social Media</span> <span className="text-yellow-600" style={{color:'hsl(39, 100%, 71%)'}}> 10 X</span>
         <div className="py-3 text-center text-5xl italic">Faster With AI</div>
         <div className='flex justify-center py-3 pb-1'>
@@ -38,7 +38,7 @@ function App() {
         </div>
         <div className="text-white text-sm font-normal">Over 4,000 5-star reviews</div>
       </div>
-      <div className="p-3 rounded bg-white">
+      <div className="p-3 py-1 rounded bg-white">
         <div className="my-2 shadow-xl rounded overflow-hidden p-2">
           <img src={location.origin+"/illustration-multiple-platforms.webp"}  alt="" />
         </div>
@@ -62,6 +62,14 @@ function App() {
           </div>
         </div>
 
+      </div>
+      <div className="p-2 col-span-2  gap-3 w-[60vw] grid lg:grid-cols-3 ">
+          <div className="p-2 bg-red-600">
+
+          </div>
+          <div style={{backgroundColor: 'hsl(228, 45%, 44%)'}} className="col-span-2 p-2 ">
+
+          </div>
       </div>
      </div>
     </>
