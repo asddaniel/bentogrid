@@ -9,7 +9,7 @@ function App() {
     <>
      <div className="grid grid-cols-1 lg:grid-cols-7 lg:row-span-6 p-3 gap-4">
       <div className="p-2 lg:col-span-2 lg:row-span-2 flex flex-col lg:items-end lg:justify-start justify-center gap-2 w-full">
-        <div className="p-3 font-semibold  rounded-lg shadow-sm cursor-pointer bg-pink-100 text-2xl h-72 lg:w-40 w-full">
+        <div className="p-3 font-semibold  rounded-lg shadow-sm cursor-pointer bg-pink-100 text-2xl h-80 lg:w-40 w-full">
         <span className="">
           Create and schedule content
         </span>
@@ -19,7 +19,7 @@ function App() {
         </div>
         </div>
 
-        <div   style={{backgroundColor:'hsl(39, 100%, 71%)'}} className="p-3 rounded-lg shadow-sm cursor-pointer overflow-hidden bg-yellow-600 text-2xl h-64 lg:w-40 w-full">
+        <div   style={{backgroundColor:'hsl(39, 100%, 71%)'}} className="p-3 rounded-lg shadow-sm cursor-pointer overflow-hidden bg-yellow-600 text-2xl h-80 lg:w-40 w-full">
         <span className=" font-semibold tracking-tight">
           Write your Content using ai
         </span>
@@ -39,10 +39,10 @@ function App() {
         <div className="text-white text-sm font-normal">Over 4,000 5-star reviews</div>
       </div>
       <div className="p-3 py-1 rounded bg-white">
-        <div className="my-2 shadow-xl rounded overflow-hidden p-2">
+        <div className="my-1 shadow-xl rounded overflow-hidden p-2">
           <img src={location.origin+"/illustration-multiple-platforms.webp"}  alt="" />
         </div>
-        <div className="my-2 text-2xl font-semibold">Manage Multiple accounts and platforms.</div>
+        <div className="my-1 text-2xl font-semibold">Manage Multiple accounts and platforms.</div>
       </div>
       <div className="p-3 rounded bg-white max-h-56 overflow-y-hidden" style={{backgroundColor:'hsl(39, 100%, 71%)'}}>
         
@@ -63,12 +63,27 @@ function App() {
         </div>
 
       </div>
-      <div className="p-2 col-span-2  gap-3 w-[60vw] grid lg:grid-cols-3 ">
-          <div className="p-2 bg-red-600">
-
+      <div className="p-2 lg:col-span-2  gap-3 lg:w-[57vw] w-full   grid lg:grid-cols-3 ">
+          
+          <div className="p-2 bg-white lg:w-full  ">
+          <div className="p-2 rounded text-5xl py-3 font-semibold">
+             {">56%"}
+            </div>
+            <div className="text-gray-800 p-2 px-4 pb-4 text-sm">
+              faster audience growth
+            </div>
+              <div className=" flex justify-start gap-2 px-4 items-center">
+              <img src="/illustration-audience-growth.webp" className='lg:w-32 w-full' alt="" />
+              </div>
           </div>
-          <div style={{backgroundColor: 'hsl(228, 45%, 44%)'}} className="col-span-2 p-2 ">
-
+          <div style={{backgroundColor: 'hsl(228, 45%, 44%)'}} className="col-span-2 p-2 items-center grid grid-cols-2 gap-6 rounded">
+            
+            <div className="p-4">
+            <img src="/illustration-grow-followers.webp" className='w-36' alt="" />
+              </div> 
+              <div className="p-3 text-[1.5rem] text-white font-semibold -tracking-3">
+                Grow Followers with non-stop content
+                </div> 
           </div>
       </div>
      </div>
